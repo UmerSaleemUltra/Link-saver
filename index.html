@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Saver</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="container p-4">
+        <h1 class="text-2xl font-bold mb-4">Link Saver</h1>
+        <form id="linkForm" class="mb-8">
+            <input type="text" id="linkInput" class="w-full rounded-lg border p-3 focus:outline-none focus:ring focus:border-blue-300" placeholder="Enter a URL">
+            <br>
+            <br>
+            <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg ml-2" onclick="saveLinks()">Save</button>
+        </form>
+        <div id="linkList" class="space-y-4">
+         
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
